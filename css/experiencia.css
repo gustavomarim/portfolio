@@ -81,3 +81,38 @@
     background   : #fff;
     padding      : 5px 10px;
 }
+
+@media(max-width: 800px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap                  : 40px;
+    }
+
+    .experiencia .subtitulo {
+        color: #141414;
+    }
+
+    .experiencia-texto {
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano {
+        position   : initial;
+        order      : 1;
+        /* Define o elemento como último, pois nenhum outro elemento do grid está definido com um valor */
+        width      : initial;
+        text-align : left;
+        font-weight: 600;
+    }
+
+    .empresa-ano::before {
+        content: "Ano: ";
+    }
+}
+
+@media(max-width: 400px) {
+    .empresa {
+        grid-template-columns: 1fr;
+        gap                  : 20px;
+    }
+}
