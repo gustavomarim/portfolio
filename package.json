@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "clean-css-cli": "^5.5.0",
+    "git-ignore": "^0.0.2"
+  }
+}
